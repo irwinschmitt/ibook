@@ -13,8 +13,8 @@
     "importHelpers": true,
     "baseUrl": ".",
     "paths": {
-      "~/*": ["./*"],
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "~/*": ["./*"]
     },
     "types": ["@nuxt/types", "@nuxtjs/axios", "@types/node"]
   },
