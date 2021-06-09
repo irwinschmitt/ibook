@@ -98,6 +98,7 @@ export default Vue.extend({
     font-size: 1.5rem;
     margin-bottom: 2rem;
   }
+
   .buttons {
     display: grid;
     grid-template-columns: repeat(2, 2.738rem);
@@ -105,6 +106,7 @@ export default Vue.extend({
     grid-gap: 0.22rem;
     justify-content: end;
     margin-top: 0.6rem;
+
     .swiper-button-unique {
       &-prev,
       &-next {
@@ -114,43 +116,52 @@ export default Vue.extend({
         align-items: center;
         cursor: pointer;
       }
+
       &-next #right-arrow {
         transform: rotate(180deg);
       }
     }
   }
 }
+
 .gallery-container {
   height: 879px;
   display: grid;
   grid-template-columns: 148px 1fr;
   grid-gap: 2rem;
+
   @include screen("small", "medium") {
     grid-template-columns: 1fr;
     height: auto;
   }
 }
+
 .gallery-main {
   width: 100%;
   height: 100%;
   box-shadow: -1px 3px 21px 1px rgba(0, 0, 0, 0.12);
   border: 1px solid #e9e9e9;
+
   .page {
     padding: 4rem 3rem 3rem;
     line-height: 1.625rem;
     cursor: grabbing;
   }
 }
+
 .gallery-thumbs {
   margin: 0 !important;
   height: 100%;
+
   .swiper-wrapper {
     display: grid;
     grid-auto-flow: row;
+
     @include screen("small", "medium") {
       grid-auto-flow: column;
     }
   }
+
   .swiper-slide {
     width: 100%;
     height: 206px;
@@ -160,18 +171,23 @@ export default Vue.extend({
     display: grid;
     justify-content: center;
     align-items: center;
+
     img {
       transition: 0.3s;
     }
+
     &:hover {
       border: 3px solid color(dark, darkest);
     }
+
     &-thumb-active {
       border: 3px solid color(dark, darkest);
     }
   }
 }
+
 .swiper-button-disabled {
   opacity: 0.38;
+  cursor: default !important;
 }
 </style>
