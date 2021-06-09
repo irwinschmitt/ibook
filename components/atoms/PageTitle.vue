@@ -28,7 +28,7 @@ export default Vue.extend({
   font-size: 2.5rem;
   font-weight: 500;
 
-  @include screen("small", "medium") {
+  @include screen("medium", "small") {
     grid-template-columns: 1fr;
     font-size: 1.8rem;
   }

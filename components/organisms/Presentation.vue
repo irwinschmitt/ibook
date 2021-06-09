@@ -27,7 +27,7 @@ export default Vue.extend({});
   grid-gap: 2rem;
   align-items: center;
 
-  @include screen("small", "medium") {
+  @include screen("medium", "small") {
     grid-template-columns: 1fr;
   }
 
