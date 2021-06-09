@@ -15,7 +15,7 @@ export interface Book {
   releaseDate: string;
   title: string;
   description: string;
-  covered: string;
+  cover: string;
   categories: Category[];
   pages: Page[];
 }
